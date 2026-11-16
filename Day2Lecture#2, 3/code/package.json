@@ -1,0 +1,26 @@
+{
+  "name": "day2lecture2and3",
+  "version": "1.0.0",
+  "description": "Here the code of my day2 learing ,",
+  "keywords": [
+    "Day2Lecture#2",
+    "3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "non"
+  },
+  "license": "ISC",
+  "author": "Muhammad Junaid Hassan",
+  "type": "commonjs",
+  "main": "Day2Lecture#2.js",
+  "scripts": {
+
+    "test": "]non",
+    "start": "nodemon Day2Lecture#2.js"
+  },
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "nodemon": "^3.1.14"
+  }
+}
