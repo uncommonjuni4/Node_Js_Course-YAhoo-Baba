@@ -1,0 +1,27 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "Here all code realtive to ejs",
+  "type  ":"module",
+
+  "keywords": [
+    "ejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "on"
+  },
+  "license": "ISC",
+  "author": "juni",
+  "type": "commonjs",
+  "main": "Lecture7.ja",
+  "scripts": {
+    "test": "no",
+    "start":"nodemon  Task1.js"
+  },
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
