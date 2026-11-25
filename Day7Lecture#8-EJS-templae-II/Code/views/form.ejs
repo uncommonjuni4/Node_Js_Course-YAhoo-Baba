@@ -1,0 +1,13 @@
+<%- include('header') %>
+
+    <form action="/submit" method="post">
+        Enter your Name: <input type="text" name="myname">
+        <input type="submit">
+    </form>
+
+    <!-- Loads from public/images.jpg -->
+    <img src="image/images.jpg" alt="Sample Image" width="200">
+
+    <h3>Name: <%= message %></h3>
+
+<%- include('footer') %>
