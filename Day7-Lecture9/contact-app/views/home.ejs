@@ -1,0 +1,95 @@
+
+<%- include('partials/header.ejs') %>
+
+<div class="container mt-5">
+  <div class="card shadow-sm border-0 rounded-4">
+    <!-- Top Header & Add Button -->
+    <div class="card-header bg-white py-3 px-4 d-flex justify-content-between align-items-center border-bottom">
+      <h5 class="mb-0 fw-bold text-dark">
+        <i class="bi bi-person-lines-fill text-primary me-2"></i>Contacts List
+      </h5>
+      <a href="/add-contact" class="btn btn-primary btn-sm rounded-pill px-3 shadow-sm">
+        <i class="bi bi-plus-lg me-1"></i> Add New Contact
+      </a>
+    </div>
+
+    <!-- Responsive Table -->
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light text-secondary text-uppercase" style="font-size: 0.85rem;">
+            <tr>
+              <th scope="col" class="ps-4">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone No</th>
+              <th scope="col" class="text-end pe-4">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="ps-4 text-muted">1</th>
+              <td class="fw-semibold">Mark</td>
+              <td>Otto</td>
+              <td><span class="badge bg-light text-dark border">@mdo</span></td>
+              <td>03490819238</td>
+              <td class="text-end pe-4">
+                <a href="/show-contact" class="btn btn-outline-info btn-sm me-1" title="View">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="/add-contact" class="btn btn-outline-warning btn-sm me-1" title="Edit">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="/delete" class="btn btn-outline-danger btn-sm" title="Delete">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="ps-4 text-muted">2</th>
+              <td class="fw-semibold">Jacob</td>
+              <td>Thornton</td>
+              <td><span class="badge bg-light text-dark border">@fat</span></td>
+              <td>03490819238</td>
+              <td class="text-end pe-4">
+                <a href="/show-contact" class="btn btn-outline-info btn-sm me-1" title="View">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="/add-contact" class="btn btn-outline-warning btn-sm me-1" title="Edit">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="/delete" class="btn btn-outline-danger btn-sm" title="Delete">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="ps-4 text-muted">3</th>
+              <td class="fw-semibold">Larry</td>
+              <td>the Bird</td>
+              <td><span class="badge bg-light text-dark border">@twitter</span></td>
+              <td>03490819238</td>
+              <td class="text-end pe-4">
+                <a href="/show-contact" class="btn btn-outline-info btn-sm me-1" title="View">
+                  <i class="bi bi-eye"></i>
+                </a>
+                <a href="/add-contact" class="btn btn-outline-warning btn-sm me-1" title="Edit">
+                  <i class="bi bi-pencil-square"></i>
+                </a>
+                <a href="/delete" class="btn btn-outline-danger btn-sm" title="Delete">
+                  <i class="bi bi-trash"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include('partials/footer.ejs') %>

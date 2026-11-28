@@ -1,0 +1,83 @@
+
+<%- include('partials/header.ejs') %>
+
+
+<br>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card shadow-sm border-0 rounded-4">
+        
+        <!-- Card Header -->
+        <div class="card-header bg-white py-3 px-4 border-bottom">
+          <h5 class="mb-0 fw-bold text-dark">
+            <i class="bi bi-person-plus-fill text-primary me-2"></i>Add / Edit Contact
+          </h5>
+        </div>
+
+        <!-- Card Body (Form) -->
+        <div class="card-body p-4">
+          <form action="" method="POST">
+            
+            <div class="row g-3">
+              <!-- First Name -->
+              <div class="col-md-6">
+                <label for="firstName" class="form-label fw-semibold text-secondary small">First Name</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-person text-muted"></i></span>
+                  <input type="text" class="form-control border-start-0 ps-0" name="first_name" id="firstName" placeholder="e.g. Mark" required>
+                </div>
+              </div>
+
+              <!-- Last Name -->
+              <div class="col-md-6">
+                <label for="lastName" class="form-label fw-semibold text-secondary small">Last Name</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-person text-muted"></i></span>
+                  <input type="text" class="form-control border-start-0 ps-0" name="last_name" id="lastName" placeholder="e.g. Otto" required>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-12">
+                <label for="email" class="form-label fw-semibold text-secondary small">Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+                  <input type="email" class="form-control border-start-0 ps-0" name="email" id="email" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-12">
+                <label for="phone" class="form-label fw-semibold text-secondary small">Phone Number</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-telephone text-muted"></i></span>
+                  <input type="tel" class="form-control border-start-0 ps-0" name="phone" id="phone" placeholder="03490819238" required>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4 text-muted">
+
+            <!-- Action Buttons -->
+            <div class="d-flex justify-content-end gap-2">
+              <a href="/" class="btn btn-light border px-4 rounded-pill">
+                <i class="bi bi-x-lg me-1"></i> Cancel
+              </a>
+              <button type="submit" class="btn btn-primary px-4 rounded-pill shadow-sm">
+                <i class="bi bi-check-lg me-1"></i> Save Contact
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </form> -->
+
+
+
+<%- include('partials/footer.ejs') %>
